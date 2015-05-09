@@ -2,14 +2,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>姜争辉的GitHub主页</title>
-	<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/base-min.css">
+	<title>图层弹出效果测试</title>
+	<link rel="stylesheet" href="fancybox/jquery.fancybox.css">
 </head>
 <body>
-	<div class="pure-g-r">
-		<div class="pure-u">
-			<p><h3>Jiang Zhenghui's Personal Homepage.</h3></p>
-		</div>
+
+	<div>
+		<a href="img/me.jpg" class="fancybox"><img style="width:50px;height:50px" src="img/me.jpg"></a>
 	</div>
+	
+	<script src="js/jquery-1.9.0.min.js"></script>
+	<script src="fancybox/jquery.fancybox.js"></script>
+	<script src="fancybox/jquery.fancybox.pack.js"></script>
+	
+	<script>
+		$(function(){
+			$(".fancybox").fancybox();
+		});
+	</script>
 </body>
 </html>
